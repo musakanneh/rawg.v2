@@ -1,7 +1,6 @@
-import { Button, GridItem, Show } from "@chakra-ui/react";
-import { AddUser } from "./components/add-user";
-import { ViewUser } from "./components/view-user";
+import { GridItem, Show } from "@chakra-ui/react";
 import { Grid } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -11,10 +10,10 @@ function App() {
         lg: `"nav nav" "aside main"`,
       }}
     >
-      <GridItem area="nav" bg="coral">
-        Nav
+      <GridItem area="nav">
+        <NavBar />
       </GridItem>
-      <Show above="large">
+      <Show above="lg">
         <GridItem area="aside" bg="gold">
           Aside
         </GridItem>
