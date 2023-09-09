@@ -1,10 +1,6 @@
 import { useState } from "react";
 import classes from "./add-user.module.scss";
 
-/**
- * Hooks
- */
-
 interface CreateUserProps {
   input: any;
 }
